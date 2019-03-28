@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Animation</title>
+  <style>
+    body {
+      background: url(Download.jpeg);
+      background-attachment: fixed;
+      text-align: center
+    }
+
+    /* The animation code */
+    @keyframes example {
+
+      0% {
+        background-color: cyan;
+      }
+
+      25% {
+        background-color: grey;
+      }
+
+      50% {
+        background-color: blue;
+        border-radius: 60px;
+      }
+
+      75% {
+        background-color: purple;
+        border-radius: 55px;
+      }
+
+      100% {
+        background-color: green;
+      }
+    }
+
+    @keyframes Stone {
+      0% {
+        background-color: purple;
+        border-radius: 60px;
+      }
+
+      25% {
+        background-color: black;
+        border-radius: 100px;
+      }
+
+      50% {
+        background: url(I-win.gif)
+      }
+      75%{transform:20px;}
+    }
+
+    /* The element to apply the animation to */
+    #Boxer {
+      width: 150px;
+      height: 150px;
+      margin: 50px;
+      background-color: cyan;
+      animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    /* The element to apply the animation to */
+    #Bob {
+      width: 150px;
+      height: 150px;
+      background-color: purple;
+      animation-timing-function: linear;
+      animation-name: Stone;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+
+  <div id="Boxer"></div>
+  <div id="Bob"></div>
+
+</body>
+
+</html>
