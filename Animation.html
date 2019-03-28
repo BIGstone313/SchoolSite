@@ -39,19 +39,26 @@
 
     @keyframes Stone {
       0% {
-        background-color: purple;
+        background-color: white;
         border-radius: 60px;
       }
 
       25% {
-        background-color: black;
+        background-color: yellow;
         border-radius: 100px;
       }
 
       50% {
         background: url(I-win.gif)
       }
-      75%{transform:20px;}
+
+      75% {
+        transform: 20px;background-color:blue
+      }
+
+      100% {
+        Border-radius: 20px;background-color:red;
+      }
     }
 
     /* The element to apply the animation to */
@@ -69,12 +76,15 @@
     #Bob {
       width: 150px;
       height: 150px;
-      background-color: purple;
+      background-color: green;
       animation-timing-function: linear;
       animation-name: Stone;
       animation-duration: 4s;
       animation-iteration-count: infinite;
       animation-fill-mode: forwards;
+      padding: 15px;
+      border-radius: 5px;
+      border:solid 20px cyan;
     }
   </style>
 
