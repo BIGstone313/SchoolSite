@@ -2,55 +2,50 @@
 <html lang="en" dir="ltr">
 
 <head>
+
   <title>Stone's First Page</title>
   <meta charset="utf-8">
+
   <style>
     body {
       background: linear-gradient(#1a2a6c, #b21f1f, #fdbb2d);
       background-attachment: fixed;
       color: cyan;
       text-align: center;
+
+      font-family: 'Srisakdi', cursive;
     }
 
 
 
     p {
       color: yellow;
-      font-family: monospace;
+      font-family: 'Srisakdi', cursive;
     }
 
     ul {
       list-style-type: none;
-      padding: 0;
       margin: 0;
-
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
     }
 
-    a {
-      color: white;
-      text-decoration: none;
-      display: block;
-      background: black;
-      width: 150px;
-      height: 20px;
-      padding: 10px;
-      margin: 20px;
-      border: solid yellow 10px;
-      border-radius: 100%;
-      color: red;
-      align-content: center;
+    li {
       float: left;
     }
 
-
-    a:hover {
-      color: yellow;
-      background: blue;
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
     }
 
-    .clear {
-      float: none;
-      clear: both;
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+      background-color: #111;
     }
   </style>
 
@@ -68,8 +63,9 @@
     <li><a href="transforms.html">This Is My transform page</a></li>
     <li><a href="animation.html">My Animation Page</a></li>
     <li><a href="seahorse.html">Seahorse Page</a></li>
-    <li><a href="John-Vang.html">John Vang Page</a><li>
-      <li><a href=tables.html>tables page</a></li>
+    <li><a href="John-Vang.html">John Vang Page</a>
+    <li>
+    <li><a href=tables.html>tables page</a></li>
   </ul>
   <br class="clear">
   <h1>Hello to my website</h1>
